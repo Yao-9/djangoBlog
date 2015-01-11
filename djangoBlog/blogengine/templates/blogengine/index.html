@@ -1,9 +1,11 @@
-{% if post_list %}
-	<ul>
-	{% for post in post_list %}
-		<li><a href="{% url 'detail' post.id %}">{{ post.title }}</a></li>
-	{% endfor %}
-	</ul>
-{% else %}
-	<p>No posts are available</p>
-{% endif %}
+{% extends "blogengine/include/base.html" %}
+
+	{% block content %}
+		{% for post in post_list %}
+			<div class="post">
+			<h1>{{ post.title }}</h1>
+			<h3>{{ post.pubDate}}</h3>
+			{{ post.text }}
+			<a href="{% url 'detail' post.id %}">{{ post.title }}</a>
+		{% endfor %}
+	{% endblock %}

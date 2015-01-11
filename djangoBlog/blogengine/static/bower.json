@@ -1,0 +1,22 @@
+{
+  "name": "yao",
+  "version": "0.0.0",
+  "authors": [
+    "Yao <zhao.jerry91@gmail.com>"
+  ],
+  "description": "null",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "blogengine/static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "html5-boilerplate": "~4.3.0"
+  }
+}
