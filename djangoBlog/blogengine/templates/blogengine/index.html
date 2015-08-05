@@ -3,9 +3,9 @@
 	{% block content %}
 		{% for post in post_list %}
 			<div class="post">
-			<h1>{{ post.title }}</h1>
+			
+			<h1><a href="{% url 'detail' post.id %}">{{ post.title }}</a></h1>
 			<h3>{{ post.pubDate}}</h3>
 			{{ post.text }}
-			<a href="{% url 'detail' post.id %}">{{ post.title }}</a>
 		{% endfor %}
 	{% endblock %}
